@@ -23,8 +23,17 @@ public:
 };
 
 class Solution {
+    vector<int> ans;
 public:
     vector<int> preorder(Node* root) {
+        if(root==NULL)
+            return ans;
+        ans.push_back(root->val);
+        for(Node *node: root->children)
+        {
+            preorder(node);
+        }
+        return ans;
     }
 };
 int main(int argc, const char * argv[]) {
