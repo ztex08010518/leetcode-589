@@ -25,7 +25,6 @@ public:
 class Solution {
 public:
     vector<int> preorder(Node* root) {
-        int i=0;
     }
 };
 int main(int argc, const char * argv[]) {
